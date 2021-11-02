@@ -179,7 +179,10 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
-  text-align: center;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 // Поле ввода
