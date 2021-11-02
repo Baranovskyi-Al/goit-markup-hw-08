@@ -1,0 +1,231 @@
+// Футер
+
+.footer {
+  background-color: var(--footer-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+// Контакты
+.footer-contacts {
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 61px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+
+.footer-contacts__item {
+  margin-bottom: 8px;
+  text-align: center;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-bottom: 9px;
+  }
+}
+
+.footer-contacts__address {
+  color: var(--secondary-title-color);
+}
+
+.footer-contacts__link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-contacts__address,
+.footer-contacts__link {
+  font-style: normal;
+  display: block;
+  padding: 0;
+  margin: 0;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-contacts__address {
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.footer-contacts__link {
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+// Социальные сети
+
+.footer-social {
+  width: 206px;
+  height: 80px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 5px;
+    margin-right: 61px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 12px;
+    margin-left: 85px;
+    margin-right: 0;
+  }
+}
+
+.footer-social__title {
+  color: var(--secondary-title-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.footer-social__list {
+  display: flex;
+  margin-left: -10px;
+}
+
+.footer-social__item {
+  width: 44px;
+  height: 44px;
+
+  margin-left: 10px;
+}
+
+.footer-social__link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.footer-social__icon {
+  fill: var(--secondary-title-color);
+}
+
+// Подписка
+
+// Форма
+
+.footer-subm {
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 1200px) {
+    width: 570px;
+    margin-top: 12px;
+    margin-right: 0;
+  }
+}
+
+.footer-subm__form {
+  display: block;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+// Заголовок
+
+.footer-subm__title {
+  color: var(--secondary-title-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+// Поле ввода
+.footer-subm__label {
+  display: block;
+  max-width: 450px;
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+}
+
+.footer-subm__input {
+  width: 100%;
+  height: 50px;
+  background-color: var(--footer-background-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding: 15px 16px;
+  margin-bottom: 20px;
+  resize: horizontal;
+
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
+  outline: none;
+
+  &::placeholder {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+}

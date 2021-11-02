@@ -1,0 +1,214 @@
+// Кнопка в герое
+
+.hero__button {
+  display: inline-block;
+  background-color: var(--button-color);
+  color: var(--button-text-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 32px;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    background-color: #188ce8;
+  }
+}
+
+// Кнопки в портфолио
+
+.portfolio-filter {
+  display: flex;
+
+  padding-bottom: 40px;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    margin-top: -15px;
+    margin-left: -8px;
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 50px;
+  }
+}
+
+.portfolio-filter__item {
+  @media screen and (max-width: 767px) {
+    margin-top: 15px;
+    margin-left: 8px;
+  }
+}
+
+.portfolio-filter__item:not(:first-child) {
+  @media screen and (min-width: 768px) {
+    margin-left: 8px;
+  }
+}
+
+.portfolio-filter__button {
+  display: inline-block;
+  background-color: var(--another-background-color);
+  color: var(--primary-title-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 22px;
+
+  transition-property: color background-color box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--button-text-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+// Кнопка в футере
+
+.footer-subm__button {
+  display: flex;
+  background-color: var(--button-color);
+  color: var(--button-text-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  border: none;
+  border-radius: 4px;
+
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 29px;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    background-color: var(--button-accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+    margin-right: 0;
+  }
+}
+
+.footer-subm__button--icon {
+  fill: var(--button-text-color);
+  margin-left: 10px;
+}
+
+// Кнопка Отправить
+
+.backdrop-contact__send {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backdrop-contact__send-button {
+  display: block;
+
+  background-color: var(--button-color);
+  color: var(--button-text-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
+  align-items: center;
+
+  width: 200px;
+  height: 50px;
+
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+
+  padding: 10px 55px;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    background-color: var(--button-accent-color);
+  }
+}
+
+.mobile-menu__button {
+  display: flex;
+  width: 40px;
+  height: 40px;
+
+  background-color: #ffffff;
+
+  border: none;
+
+  cursor: pointer;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &.js-close-menu {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    margin: 0;
+  }
+
+  &:focus .mobile-menu__button--icon,
+  &:hover .mobile-menu__button--icon {
+    fill: var(--button-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
